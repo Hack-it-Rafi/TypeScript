@@ -17,10 +17,10 @@
         [key in keyof T]:T[key];
     }
 
-    const area1:AreaString<{height:string;width:number;depth:number}>={
+    const area1:AreaString<{height:string;width:number;depth?:number}>={
         height:"100",
         width:50,
-        depth:100
+        // depth:100
     }
 
     console.log(area1);
